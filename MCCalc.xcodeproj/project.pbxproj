@@ -192,13 +192,16 @@
 				TargetAttributes = {
 					E2880B5320E506DA00FBCF36 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 					E2880B6520E506DC00FBCF36 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = E2880B5320E506DA00FBCF36;
 					};
 					E2880B7020E506DC00FBCF36 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = E2880B5320E506DA00FBCF36;
 					};
 				};
@@ -428,9 +431,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SCLab.MCCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -447,9 +451,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SCLab.MCCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -469,7 +474,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SCLab.MCCalcTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCCalc.app/Contents/MacOS/MCCalc";
 			};
 			name = Debug;
@@ -490,7 +495,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SCLab.MCCalcTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCCalc.app/Contents/MacOS/MCCalc";
 			};
 			name = Release;
@@ -510,7 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SCLab.MCCalcUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = MCCalc;
 			};
 			name = Debug;
@@ -530,7 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SCLab.MCCalcUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = MCCalc;
 			};
 			name = Release;
