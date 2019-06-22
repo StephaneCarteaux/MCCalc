@@ -22,6 +22,7 @@ class ViewController: NSViewController {
         case opcionesError
     }
     
+    // fuccion para calcular la nota redondeada
     func calcular () throws {
         guard let preguntas:Float = Float(numeroPreguntasTextField.stringValue) else {
             throw CalcularError.generalError
@@ -44,6 +45,15 @@ class ViewController: NSViewController {
         let nota:Float = (Float((correctas - (incorrectas / (opciones - 1))) / preguntas * 10))
         notaLabel.stringValue = String(format: "%.2f", round(nota/0.25)*0.25)
         
+        correctasTextField.becomeFirstResponder()
+    }
+    
+    //funccion para resetear los campos de numeros de respuesta correctas e incorresctas
+    func reset() {
+        correctasTextField.stringValue = ""
+        incorrectasTextField.stringValue = ""
+        notaLabel.stringValue = ""
+        correctasTextField.becomeFirstResponder()
     }
     
     //MARK: Actions
@@ -51,10 +61,14 @@ class ViewController: NSViewController {
         do {
             try calcular ()
         } catch CalcularError.opcionesError {
-            notaLabel.stringValue = ("Error")
+            notaLabel.stringValue = ("Error!")
         } catch {
             notaLabel.stringValue = ("Error")
         }
+    }
+    
+    @IBAction func resetButton(_ sender: NSButton) {
+        reset()
     }
     
     override func viewDidLoad() {
@@ -67,6 +81,12 @@ class ViewController: NSViewController {
         didSet {
         // Update the view, if already loaded.
         }
+    }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        
+        numeroPreguntasTextField.becomeFirstResponder()
     }
 
 

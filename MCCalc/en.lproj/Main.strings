@@ -1,0 +1,69 @@
+
+/* Class = "NSTextFieldCell"; placeholderString = "KO"; ObjectID = "0dP-DS-XBT"; */
+"0dP-DS-XBT.placeholderString" = "KO";
+
+/* Class = "NSMenuItem"; title = "MCCalc"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "MCCalc";
+
+/* Class = "NSMenuItem"; title = "Quit MCCalc"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit MCCalc";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "About MCCalc"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About MCCalc";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
+"H8h-7b-M4v.title" = "View";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Hide MCCalc"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide MCCalc";
+
+/* Class = "NSTextFieldCell"; title = "Nº Preguntas"; ObjectID = "V0c-6T-Zem"; */
+"V0c-6T-Zem.title" = "Nº Preguntas";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSTextFieldCell"; title = "Nº Opciones"; ObjectID = "Vt5-Mk-YOm"; */
+"Vt5-Mk-YOm.title" = "Nº Opciones";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "File";
+
+/* Class = "NSTextFieldCell"; title = "Correctas"; ObjectID = "hvV-k6-GiA"; */
+"hvV-k6-GiA.title" = "Correctas";
+
+/* Class = "NSMenuItem"; title = "Format"; ObjectID = "jxT-CU-nIS"; */
+"jxT-CU-nIS.title" = "Format";
+
+/* Class = "NSButtonCell"; title = "Calcular"; ObjectID = "ogF-vT-7zr"; */
+"ogF-vT-7zr.title" = "Calcular";
+
+/* Class = "NSTextFieldCell"; placeholderString = "OK"; ObjectID = "qHg-2N-x1n"; */
+"qHg-2N-x1n.placeholderString" = "OK";
+
+/* Class = "NSTextFieldCell"; title = "Incorrectas"; ObjectID = "tBQ-yh-fIF"; */
+"tBQ-yh-fIF.title" = "Incorrectas";
+
+/* Class = "NSMenu"; title = "MCCalc"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "MCCalc";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "wdr-hA-JCR"; */
+"wdr-hA-JCR.title" = "Box";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";
