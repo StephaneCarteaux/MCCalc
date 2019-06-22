@@ -42,9 +42,16 @@ class ViewController: NSViewController {
         guard correctas + incorrectas <= preguntas else {
             throw CalcularError.generalError
         }
-        let nota:Float = (Float((correctas - (incorrectas / (opciones - 1))) / preguntas * 10))
-        notaLabel.stringValue = String(format: "%.2f", round(nota/0.25)*0.25)
+        let resultado:Float = (Float((correctas - (incorrectas / (opciones - 1))) / preguntas * 10))
+        let nota:Float
+        if resultado < 0 {
+            nota = 0
+        } else {
+            nota = round(resultado/0.25)*0.25
+        }
+        notaLabel.stringValue = String(format: "%.2f", nota)
         
+        // despues de efectuar el calculo, el cursor vuelve al campo de respuestas correctas
         correctasTextField.becomeFirstResponder()
     }
     
