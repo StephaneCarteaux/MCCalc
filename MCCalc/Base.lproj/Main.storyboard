@@ -214,7 +214,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" id="CIU-13-Arc">
-                                            <rect key="frame" x="8" y="75" width="250" height="43"/>
+                                            <rect key="frame" x="10" y="75" width="250" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="smallSquare" title="Reset" bezelStyle="smallSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="NKD-Qq-eFl">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>

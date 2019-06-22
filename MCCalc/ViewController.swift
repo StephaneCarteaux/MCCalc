@@ -51,7 +51,7 @@ class ViewController: NSViewController {
         }
         notaLabel.stringValue = String(format: "%.2f", nota)
         
-        // despues de efectuar el calculo, el cursor vuelve al campo de respuestas correctas
+        // despues de efectuar el calculo, focus al campo de respuestas correctas
         correctasTextField.becomeFirstResponder()
     }
     
@@ -81,7 +81,29 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Recupera los valores guardados de numero de preguntas y opciones
+        let numeroPreguntas = UserDefaults.standard.string(forKey: "Preguntas") ?? ""
+        let numeroOpciones = UserDefaults.standard.string(forKey: "Opciones") ?? ""
+        
+        // Assigna los valores guardados de numero de preguntas y opciones
+        numeroPreguntasTextField.stringValue = numeroPreguntas
+        numeroOpcionesTextField.stringValue = numeroOpciones
+        
+    }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        
+        // Focus al campo de texto de respuestas correctas
+        correctasTextField.becomeFirstResponder()
+
+    }
+    
+    override func viewWillDisappear() {
+        
+        //Guarda los valores de numero de preguntas y opciones
+        UserDefaults.standard.set(numeroPreguntasTextField.stringValue, forKey: "Preguntas")
+        UserDefaults.standard.set(numeroOpcionesTextField.stringValue, forKey: "Opciones")
     }
 
     override var representedObject: Any? {
@@ -89,13 +111,6 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-    
-    override func viewDidAppear() {
-        super.viewDidAppear()
-        
-        numeroPreguntasTextField.becomeFirstResponder()
-    }
-
 
 }
 
