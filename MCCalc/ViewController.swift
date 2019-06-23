@@ -27,21 +27,27 @@ class ViewController: NSViewController {
         guard let preguntas:Float = Float(numeroPreguntasTextField.stringValue) else {
             throw CalcularError.generalError
         }
+        
         guard let opciones:Float = Float(numeroOpcionesTextField.stringValue) else {
             throw CalcularError.generalError
         }
+        
         guard opciones >= 2 else {
             throw CalcularError.opcionesError
         }
+        
         guard let correctas:Float = Float(correctasTextField.stringValue) else {
             throw CalcularError.generalError
         }
+        
         guard let incorrectas:Float = Float(incorrectasTextField.stringValue) else {
             throw CalcularError.generalError
         }
+        
         guard correctas + incorrectas <= preguntas else {
             throw CalcularError.generalError
         }
+        
         let resultado:Float = (Float((correctas - (incorrectas / (opciones - 1))) / preguntas * 10))
         let nota:Float
         if resultado < 0 {
@@ -50,8 +56,10 @@ class ViewController: NSViewController {
             nota = round(resultado/0.25)*0.25
         }
         notaLabel.stringValue = String(format: "%.2f", nota)
-        
-        // despues de efectuar el calculo, focus al campo de respuestas correctas
+    }
+    
+    func selectCorrectasTextField (){
+        // Selecciona el campo de respuestas correctas
         correctasTextField.becomeFirstResponder()
     }
     
@@ -60,7 +68,6 @@ class ViewController: NSViewController {
         correctasTextField.stringValue = ""
         incorrectasTextField.stringValue = ""
         notaLabel.stringValue = ""
-        correctasTextField.becomeFirstResponder()
     }
     
     //MARK: Actions
@@ -72,10 +79,12 @@ class ViewController: NSViewController {
         } catch {
             notaLabel.stringValue = ("Error")
         }
+        selectCorrectasTextField()
     }
     
     @IBAction func resetButton(_ sender: NSButton) {
         reset()
+        selectCorrectasTextField()
     }
     
     override func viewDidLoad() {
@@ -88,19 +97,15 @@ class ViewController: NSViewController {
         // Assigna los valores guardados de numero de preguntas y opciones
         numeroPreguntasTextField.stringValue = numeroPreguntas
         numeroOpcionesTextField.stringValue = numeroOpciones
-        
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
-        
         // Focus al campo de texto de respuestas correctas
         correctasTextField.becomeFirstResponder()
-
     }
     
     override func viewWillDisappear() {
-        
         //Guarda los valores de numero de preguntas y opciones
         UserDefaults.standard.set(numeroPreguntasTextField.stringValue, forKey: "Preguntas")
         UserDefaults.standard.set(numeroOpcionesTextField.stringValue, forKey: "Opciones")
